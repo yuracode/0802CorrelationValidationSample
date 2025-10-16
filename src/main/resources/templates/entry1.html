@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>相関項目チェック</title>
+</head>
+<body>
+	<h1>@AssertTrueの利用</h1>
+	<form th:action="@{/}" th:object="${sampleForm}" method="post">
+		<p>パスワード　　　<input type="password" th:field="*{password}" /></p>
+		<p>確認用パスワード<input type="password" th:field="*{confirmPassword}" /></p>
+		<!-- 相関項目チェックのエラーメッセージ -->
+		<p><input type="submit" value="チェック" /></p>
+	</form>
+</body>
+</html>

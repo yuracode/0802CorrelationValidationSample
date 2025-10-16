@@ -14,7 +14,7 @@ public class CheckController {
 	// 入力画面の表示
 	@GetMapping()
 	public String showForm(SampleForm form) {
-		return "entry";
+		return "entry1";
 	}
 
 	// 相関項目チェックの実行
